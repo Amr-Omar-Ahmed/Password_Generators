@@ -49,10 +49,13 @@
           </button>
         </div>
       </div>
-
-      <div class="box" *ngIf="password">
-        <label>Your Password</label>
-        <input class="input" [value]="password" />
+      <div class="field">
+        <div class="control">
+          <div class="box" *ngIf="password">
+            <label>Your Password</label>
+            <input class="input" [value]="password" />
+          </div>
+        </div>
       </div>
     </div>
   </div>
