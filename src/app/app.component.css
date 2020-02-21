@@ -1,1 +1,6 @@
 @import "bulma/css/bulma.min.css";
+
+.p1 {
+  padding: 6px;
+  display: inline-block;
+}

@@ -1,18 +1,18 @@
 <div class="container" style="padding-top: 5%;">
   <div class="columns is-centered">
-    <div class="box column is-one-third">
+    <div class="box column is-half">
       <h1 class="title has-text-centered">Password Generator</h1>
 
       <div class="field">
         <div class="control">
-          <label>Length</label>
+          <label class="p1">Length</label>
           <input class="input" (input)="onChangeLength($event.target.value)" />
         </div>
       </div>
 
       <div class="field">
         <div class="control">
-          <label class="checkbox">
+          <label class="checkbox p1">
             <input (change)="onChangeUseLetters()" type="checkbox" />
             Use Letters
           </label>
@@ -21,7 +21,7 @@
 
       <div class="field">
         <div class="control">
-          <label class="checkbox">
+          <label class="checkbox p1">
             <input (change)="onChangeUseNumbers()" type="checkbox" />
             Use Numbers
           </label>
@@ -30,7 +30,7 @@
 
       <div class="field">
         <div class="control">
-          <label class="checkbox">
+          <label class="checkbox p1">
             <input (change)="onChangeUseSymbols()" type="checkbox" />
             Use Symbols
           </label>
@@ -52,7 +52,7 @@
       <div class="field">
         <div class="control">
           <div class="box" *ngIf="password">
-            <label>Your Password</label>
+            <label class="p1">Your Password</label>
             <input class="input" [value]="password" />
           </div>
         </div>
